@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <author>Zyta Tulin</author>
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>770</width>
+    <height>601</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>PluwioGROM</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/dodatkowe/IKONY/32x32/lightning.png</normaloff>:/dodatkowe/IKONY/32x32/lightning.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_4">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="maximumSize">
+             <size>
+              <width>250</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Lokalizacja:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QListWidget" name="listWidget">
+            <property name="minimumSize">
+             <size>
+              <width>50</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>250</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="sortingEnabled">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="QLabel" name="label_3">
+            <property name="text">
+             <string>Data pomiaru:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QListWidget" name="listWidget_2">
+            <property name="minimumSize">
+             <size>
+              <width>50</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>200</width>
+              <height>16777215</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <property name="sizeConstraint">
+         <enum>QLayout::SetNoConstraint</enum>
+        </property>
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>16</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Metadane:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="metadataTable">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>300</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>483</height>
+           </size>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="editTriggers">
+           <set>QAbstractItemView::AnyKeyPressed|QAbstractItemView::EditKeyPressed|QAbstractItemView::SelectedClicked</set>
+          </property>
+          <property name="alternatingRowColors">
+           <bool>true</bool>
+          </property>
+          <property name="rowCount">
+           <number>15</number>
+          </property>
+          <property name="columnCount">
+           <number>2</number>
+          </property>
+          <attribute name="horizontalHeaderVisible">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="horizontalHeaderDefaultSectionSize">
+           <number>200</number>
+          </attribute>
+          <attribute name="verticalHeaderVisible">
+           <bool>false</bool>
+          </attribute>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <column/>
+          <column/>
+          <item row="0" column="0">
+           <property name="text">
+            <string>Mierzony parametr</string>
+           </property>
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="flags">
+            <set>ItemIsSelectable|ItemIsUserCheckable</set>
+           </property>
+          </item>
+          <item row="0" column="1">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="flags">
+            <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsEnabled</set>
+           </property>
+          </item>
+          <item row="1" column="0">
+           <property name="text">
+            <string>Przyrząd pomiarowy</string>
+           </property>
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="flags">
+            <set>ItemIsSelectable|ItemIsUserCheckable</set>
+           </property>
+          </item>
+          <item row="2" column="0">
+           <property name="text">
+            <string>Metoda pomiaru</string>
+           </property>
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="flags">
+            <set>ItemIsSelectable|ItemIsUserCheckable</set>
+           </property>
+          </item>
+          <item row="3" column="0">
+           <property name="text">
+            <string>Rodzaj zapisu danych</string>
+           </property>
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="flags">
+            <set>ItemIsSelectable|ItemIsUserCheckable</set>
+           </property>
+          </item>
+          <item row="4" column="0">
+           <property name="text">
+            <string>Cechy wykresu</string>
+           </property>
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="flags">
+            <set>ItemIsSelectable|ItemIsUserCheckable</set>
+           </property>
+          </item>
+          <item row="5" column="0">
+           <property name="text">
+            <string>Jednostka pomiarowa</string>
+           </property>
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="flags">
+            <set>ItemIsSelectable|ItemIsUserCheckable</set>
+           </property>
+          </item>
+          <item row="6" column="0">
+           <property name="text">
+            <string>Dokładność pomiarowa</string>
+           </property>
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="flags">
+            <set>ItemIsSelectable|ItemIsUserCheckable</set>
+           </property>
+          </item>
+          <item row="7" column="0">
+           <property name="text">
+            <string>Skala pomiaru</string>
+           </property>
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="flags">
+            <set>ItemIsSelectable|ItemIsUserCheckable</set>
+           </property>
+          </item>
+          <item row="8" column="0">
+           <property name="text">
+            <string>Lokalizacja</string>
+           </property>
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="flags">
+            <set>ItemIsSelectable|ItemIsUserCheckable</set>
+           </property>
+          </item>
+          <item row="9" column="0">
+           <property name="text">
+            <string>Miejsce</string>
+           </property>
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="flags">
+            <set>ItemIsSelectable|ItemIsUserCheckable</set>
+           </property>
+          </item>
+          <item row="10" column="0">
+           <property name="text">
+            <string>Obserwator</string>
+           </property>
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="flags">
+            <set>ItemIsSelectable|ItemIsUserCheckable</set>
+           </property>
+          </item>
+          <item row="11" column="0">
+           <property name="text">
+            <string>Badane lata</string>
+           </property>
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="flags">
+            <set>ItemIsSelectable|ItemIsUserCheckable</set>
+           </property>
+          </item>
+          <item row="12" column="0">
+           <property name="text">
+            <string>Częstotliwość pomiaru</string>
+           </property>
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="flags">
+            <set>ItemIsSelectable|ItemIsUserCheckable</set>
+           </property>
+          </item>
+          <item row="13" column="0">
+           <property name="text">
+            <string>Stacja pomiarowa</string>
+           </property>
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="flags">
+            <set>ItemIsSelectable|ItemIsUserCheckable</set>
+           </property>
+          </item>
+          <item row="14" column="0">
+           <property name="text">
+            <string>Uwagi</string>
+           </property>
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="flags">
+            <set>NoItemFlags</set>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>Pasek pluwiogramu:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QScrollArea" name="Picture">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+border-style: solid;
+border-width: 1px;</string>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>750</width>
+         <height>148</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="margin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="pic_lab">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>770</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuPlik">
+    <property name="title">
+     <string>Plik</string>
+    </property>
+    <addaction name="actionNew"/>
+    <addaction name="actionOpen"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuPomoc">
+    <property name="title">
+     <string>Pomoc</string>
+    </property>
+    <addaction name="actionO_programie"/>
+   </widget>
+   <addaction name="menuPlik"/>
+   <addaction name="menuPomoc"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="floatable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNew"/>
+   <addaction name="actionOpen"/>
+   <addaction name="separator"/>
+   <addaction name="actionAddGroup"/>
+   <addaction name="separator"/>
+   <addaction name="actionAddPluw"/>
+   <addaction name="actionDelPluw"/>
+   <addaction name="separator"/>
+  </widget>
+  <action name="actionNew">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/baza danych/Nowa baza danych</normaloff>:/baza danych/Nowa baza danych</iconset>
+   </property>
+   <property name="text">
+    <string>Nowa baza</string>
+   </property>
+   <property name="statusTip">
+    <string>Tworzy nową bazę danych.</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/baza danych/Otwórz bazę danych</normaloff>:/baza danych/Otwórz bazę danych</iconset>
+   </property>
+   <property name="text">
+    <string>Otwórz bazę</string>
+   </property>
+   <property name="statusTip">
+    <string>Otwiera istniejący plik bazy danych.</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Wyjście</string>
+   </property>
+   <property name="statusTip">
+    <string>Kończy działanie programu.</string>
+   </property>
+  </action>
+  <action name="actionO_programie">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/dodatkowe/IKONY/32x32/information.png</normaloff>:/dodatkowe/IKONY/32x32/information.png</iconset>
+   </property>
+   <property name="text">
+    <string>O programie...</string>
+   </property>
+   <property name="statusTip">
+    <string>Informacje o programie.</string>
+   </property>
+  </action>
+  <action name="actionAddPluw">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/dane/IKONY/32x32/page_add.png</normaloff>:/dane/IKONY/32x32/page_add.png</iconset>
+   </property>
+   <property name="text">
+    <string>Dodaj pluwiogram</string>
+   </property>
+   <property name="iconText">
+    <string>Dodaj pomiar</string>
+   </property>
+   <property name="toolTip">
+    <string>Dodaj pomiar</string>
+   </property>
+   <property name="statusTip">
+    <string>Tworzy nowy pomiar powiązany z aktualnie wybranym zbiorem</string>
+   </property>
+  </action>
+  <action name="actionDelPluw">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/dane/IKONY/32x32/page_delete.png</normaloff>:/dane/IKONY/32x32/page_delete.png</iconset>
+   </property>
+   <property name="text">
+    <string>Usuń pluwiogram</string>
+   </property>
+   <property name="iconText">
+    <string>Usuń pomiar</string>
+   </property>
+   <property name="toolTip">
+    <string>Usuń pomiar</string>
+   </property>
+   <property name="statusTip">
+    <string>Usuwa wybrany pomiar ze zbioru</string>
+   </property>
+  </action>
+  <action name="actionAddGroup">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/dane/IKONY/32x32/folder_add.png</normaloff>:/dane/IKONY/32x32/folder_add.png</iconset>
+   </property>
+   <property name="text">
+    <string>Dodaj zbiór pomiarów</string>
+   </property>
+   <property name="toolTip">
+    <string>Dodaj zbiór pomiarów</string>
+   </property>
+   <property name="statusTip">
+    <string>Tworzy nowy wpis metadanych dla zbioru pomiarów</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

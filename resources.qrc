@@ -1,0 +1,22 @@
+<RCC>
+  <qresource prefix="baza danych">
+    <file alias="Otwórz bazę danych">IKONY/32x32/folder_database.png</file>
+    <file alias="Nowa baza danych">IKONY/32x32/database_add.png</file>
+    <file alias="Usuń bazę danych">IKONY/32x32/database_delete.png</file>
+    <file alias="Zapisz bazę danych">IKONY/32x32/database_save.png</file>
+  </qresource>
+  <qresource prefix="Logo">
+    <file>lightning-icon.png</file>
+  </qresource>
+  <qresource prefix="dane">
+    <file>IKONY/32x32/page_add.png</file>
+    <file>IKONY/32x32/folder_add.png</file>
+    <file>IKONY/32x32/folder_delete.png</file>
+    <file>IKONY/32x32/page_delete.png</file>
+    <file>IKONY/32x32/page_save.png</file>
+  </qresource>
+  <qresource prefix="dodatkowe">
+    <file>IKONY/32x32/lightning.png</file>
+    <file>IKONY/32x32/information.png</file>
+  </qresource>
+</RCC>
